@@ -13,3 +13,15 @@ Finished building target: Assignment01
 08:49:18 **** Incremental Build of configuration Debug for project Assignment01 ****
 make all 
 make: Nothing to be done for `all'.
+09:01:35 **** Incremental Build of configuration Debug for project Assignment01 ****
+make all 
+Building file: ../Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
+Finished building: ../Assignment01.cpp
+ 
+Building target: Assignment01
+Invoking: MacOS X C++ Linker
+g++  -o "Assignment01"  ./Assignment01.o   
+Finished building target: Assignment01
+ 

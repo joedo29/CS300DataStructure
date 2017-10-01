@@ -14,3 +14,9 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-10-01 08:50:56.958
 !MESSAGE No repository found at http://www.eclipse.org/downloads.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-10-01 09:01:35.237
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-10-01 09:01:35.237
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType

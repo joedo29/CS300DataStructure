@@ -5,5 +5,6 @@ int main (){
 	int x = 10;
 	int *p = &x;
 	int &r = *p;
-	cout << r;
+	cout << r << endl;
+	cout << "Hello World!";
 }
