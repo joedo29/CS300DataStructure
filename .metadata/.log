@@ -20,3 +20,99 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.launchbar.core 2 0 2017-10-01 09:01:35.237
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+!SESSION 2017-10-02 19:43:54.975 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/joedo/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/joedo/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-10-02 19:44:10.501
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-10-02 19:48:22.857
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-10-02 19:48:22.863
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-10-02 20:39:24.576
+!MESSAGE No repository found at http://www.eclipse.org/downloads.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2017-10-03 10:47:32.530
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: /Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/Debug/Assignment01 not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:126)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:292)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:137)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2017-10-03 10:47:32.533
+!MESSAGE /Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/Debug/Assignment01 not found
+!STACK 0
+java.io.FileNotFoundException: /Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/Debug/Assignment01 not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:126)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:292)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:137)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-10-03 10:49:57.140
+!MESSAGE An internal error occurred during: "Update validate job".
+!STACK 0
+org.eclipse.oomph.util.ReflectUtil$ReflectionException: java.lang.NullPointerException
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:132)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.loadMetadataRepository(ProvisioningContext.java:216)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedMetadataRepositories(ProvisioningContext.java:199)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getMetadata(ProvisioningContext.java:280)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.updatesFor(SimplePlanner.java:784)
+	at org.eclipse.equinox.p2.operations.UpdateOperation.updatesFor(UpdateOperation.java:142)
+	at org.eclipse.equinox.p2.operations.UpdateOperation.computeProfileChangeRequest(UpdateOperation.java:179)
+	at org.eclipse.equinox.p2.operations.UpdateOperation$1.run(UpdateOperation.java:323)
+	at org.eclipse.equinox.internal.p2.operations.SearchForUpdatesResolutionJob.runModal(SearchForUpdatesResolutionJob.java:37)
+	at org.eclipse.equinox.p2.operations.ProfileChangeOperation.resolveModal(ProfileChangeOperation.java:115)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:117)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:98)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater$6.run(AutomaticUpdater.java:359)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.findMatchingRepositoryExtensions(AbstractRepositoryManager.java:404)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:763)
+	at sun.reflect.GeneratedMethodAccessor47.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	... 18 more
+!SESSION 2017-10-03 10:49:57.730 -----------------------------------------------
+eclipse.buildId=4.7.1.M20170906-1700
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/joedo/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/Users/joedo/Documents/workspace/CS300.Database.Structure/ -product org.eclipse.epp.package.java.product -keyring /Users/joedo/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-10-03 10:50:03.150
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-10-03 10:58:53.545
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2017-10-03 10:58:53.550
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType

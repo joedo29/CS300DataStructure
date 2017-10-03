@@ -1,4 +1,4 @@
-09:01:35 **** Incremental Build of configuration Debug for project Assignment01 ****
+11:11:23 **** Incremental Build of configuration Debug for project Assignment01 ****
 make all 
 Building file: ../Assignment01.cpp
 Invoking: GCC C++ Compiler
@@ -11,5 +11,5 @@ g++  -o "Assignment01"  ./Assignment01.o
 Finished building target: Assignment01
  
 
-09:01:35 Build Finished (took 442ms)
+11:11:23 Build Finished (took 484ms)
 

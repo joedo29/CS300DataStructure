@@ -25,3 +25,118 @@ Invoking: MacOS X C++ Linker
 g++  -o "Assignment01"  ./Assignment01.o   
 Finished building target: Assignment01
  
+19:47:58 **** Incremental Build of configuration Debug for project Assignment01 ****
+make all 
+Building file: ../Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
+Finished building: ../Assignment01.cpp
+ 
+Building target: Assignment01
+Invoking: MacOS X C++ Linker
+g++  -o "Assignment01"  ./Assignment01.o   
+Finished building target: Assignment01
+ 
+19:48:24 **** Incremental Build of configuration Debug for project Assignment01 ****
+make all 
+Building file: ../Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
+Finished building: ../Assignment01.cpp
+ 
+Building target: Assignment01
+Invoking: MacOS X C++ Linker
+g++  -o "Assignment01"  ./Assignment01.o   
+Finished building target: Assignment01
+ 
+10:47:26 **** Incremental Build of configuration Debug for project Assignment01 ****
+make all 
+Building file: ../Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
+../Assignment01.cpp:12:9: error: definition of variable with array type needs an explicit size or an initializer
+        string myArray[];
+               ^
+../Assignment01.cpp:13:11: error: redefinition of 'file'
+        ifstream file("phonebook.txt");
+                 ^
+../Assignment01.cpp:9:11: note: previous definition is here
+        ifstream file;
+                 ^
+2 errors generated.
+make: *** [Assignment01.o] Error 1
+10:48:14 **** Incremental Build of configuration Debug for project Assignment01 ****
+make all 
+Building file: ../Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
+Finished building: ../Assignment01.cpp
+ 
+Building target: Assignment01
+Invoking: MacOS X C++ Linker
+g++  -o "Assignment01"  ./Assignment01.o   
+Finished building target: Assignment01
+ 
+10:56:15 **** Incremental Build of configuration Debug for project Assignment01 ****
+make all 
+Building file: ../Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
+Finished building: ../Assignment01.cpp
+ 
+Building target: Assignment01
+Invoking: MacOS X C++ Linker
+g++  -o "Assignment01"  ./Assignment01.o   
+Finished building target: Assignment01
+ 
+10:58:57 **** Incremental Build of configuration Debug for project Assignment01 ****
+make all 
+Building file: ../Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
+../Assignment01.cpp:13:15: warning: variable 'a' is uninitialized when used here [-Wuninitialized]
+        outfile << 2*a << " " << 2*b;
+                     ^
+../Assignment01.cpp:11:7: note: initialize the variable 'a' to silence this warning
+        int a, b;
+             ^
+              = 0
+../Assignment01.cpp:13:29: warning: variable 'b' is uninitialized when used here [-Wuninitialized]
+        outfile << 2*a << " " << 2*b;
+                                   ^
+../Assignment01.cpp:11:10: note: initialize the variable 'b' to silence this warning
+        int a, b;
+                ^
+                 = 0
+2 warnings generated.
+Finished building: ../Assignment01.cpp
+ 
+Building target: Assignment01
+Invoking: MacOS X C++ Linker
+g++  -o "Assignment01"  ./Assignment01.o   
+Finished building target: Assignment01
+ 
+11:02:13 **** Incremental Build of configuration Debug for project Assignment01 ****
+make all 
+Building file: ../Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
+Finished building: ../Assignment01.cpp
+ 
+Building target: Assignment01
+Invoking: MacOS X C++ Linker
+g++  -o "Assignment01"  ./Assignment01.o   
+Finished building target: Assignment01
+ 
+11:11:23 **** Incremental Build of configuration Debug for project Assignment01 ****
+make all 
+Building file: ../Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
+Finished building: ../Assignment01.cpp
+ 
+Building target: Assignment01
+Invoking: MacOS X C++ Linker
+g++  -o "Assignment01"  ./Assignment01.o   
+Finished building target: Assignment01
+ 
