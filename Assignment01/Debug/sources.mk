@@ -24,4 +24,8 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 . \
+cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC \
+cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX \
+cmake-build-debug/CMakeFiles/Assignment01.dir \
+cmake-build-debug/CMakeFiles \
 

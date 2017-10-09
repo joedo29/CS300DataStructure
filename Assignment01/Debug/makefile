@@ -8,6 +8,10 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include cmake-build-debug/CMakeFiles/Assignment01.dir/subdir.mk
+-include cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/subdir.mk
+-include cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/subdir.mk
+-include cmake-build-debug/CMakeFiles/subdir.mk
 -include subdir.mk
 -include objects.mk
 

@@ -25,6 +25,18 @@ public:
 	// Overload constructor
 	contact(string, string, string);
 
+    const string &getFirst() const;
+
+    void setFirst(const string &first);
+
+    const string &getLast() const;
+
+    void setLast(const string &last);
+
+    const string &getPhone() const;
+
+    void setPhone(const string &phone);
+
 }; // closes contact class
 
 

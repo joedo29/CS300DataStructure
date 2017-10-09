@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/Assignment01.cpp
+contact.h
+/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/contact.h
+
+/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/contact.cpp
+contact.h
+/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/contact.h
+
+/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/contact.h
+iostream
+-
+fstream
+-
+string
+-
+
