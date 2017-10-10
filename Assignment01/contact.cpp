@@ -39,3 +39,9 @@ const string &contact::getPhone() const {
 void contact::setPhone(const string &phone) {
     contact::phone = phone;
 }
+
+void print(contact contact1) {
+    cout << contact1.getFirst() << " " << contact1.getLast() << " "<< contact1.getPhone() << endl;
+}
+
+void arrayOfContact();

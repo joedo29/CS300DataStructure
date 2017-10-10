@@ -7,8 +7,12 @@
 #IncludeRegexTransform: 
 
 /Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/Assignment01.cpp
+sstream
+-
 contact.h
 /Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/contact.h
+extra.h
+/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/extra.h
 
 /Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/contact.cpp
 contact.h
@@ -21,4 +25,8 @@ fstream
 -
 string
 -
+
+/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/extra.h
+contact.h
+/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/contact.h
 

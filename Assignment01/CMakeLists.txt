@@ -8,6 +8,6 @@ set(SOURCE_FILES
         contact.cpp
         contact.h
         phonebook.txt
-        phonebookmini.txt)
+        phonebookmini.txt extra.h)
 
 add_executable(Assignment01 ${SOURCE_FILES})

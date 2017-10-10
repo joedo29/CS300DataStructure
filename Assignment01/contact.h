@@ -15,15 +15,15 @@ using namespace std;
 
 class contact{
 public:
-	// Default Constructor
-	contact();
+    string first;
+    string last;
+    string phone;
 
-	string first;
-	string last;
-	string phone;
+    // Default Constructor
+    contact();
 
-	// Overload constructor
-	contact(string, string, string);
+    // Overload constructor
+    contact(string, string, string);
 
     const string &getFirst() const;
 
@@ -36,6 +36,12 @@ public:
     const string &getPhone() const;
 
     void setPhone(const string &phone);
+
+    void arrayOfContact();
+
+    void print(contact contact1);
+
+    void contactLookup(string lookup);
 
 }; // closes contact class
 

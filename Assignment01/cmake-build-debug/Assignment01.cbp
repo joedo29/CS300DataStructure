@@ -91,6 +91,9 @@
 		<Unit filename="/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/contact.h">
 			<Option target="Assignment01"/>
 		</Unit>
+		<Unit filename="/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/extra.h">
+			<Option target="Assignment01"/>
+		</Unit>
 		<Unit filename="/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/phonebook.txt">
 			<Option target="Assignment01"/>
 		</Unit>
