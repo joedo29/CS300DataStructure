@@ -1,3 +1,11 @@
+/*
+* Assignment01.cpp
+*
+*  Created on: Oct 4, 2017
+*      Author: Joe Do
+ *      Purpose of this assignment is to create a phonebook program that allows
+ *      users to search, delete, add, and view a list of all contacts.
+*/
 
 #include <sstream>
 #include "contact.h"
@@ -5,6 +13,8 @@
 
 using namespace std;
 contact* array;
+int arraySize = 0;
+
 char userInput() {
     char userInput;
     cout << "A(Add) | S(Search) | D(Delete) | L(List) | Q(Quit): ";
@@ -53,13 +63,42 @@ void contactList(){
     }
 } // closes contactList method
 
+contact* addContact(string first, string last, string phone){
+    delete array;
+    array = new contact[arraySize];
+    arrayOfContact();
+    contact contact1(std::move(first), std::move(last), std::move(phone));
 
-int arraySize = 0;
+    ofstream output("phonebookmini.txt");
+    for (int i = 0; i < arraySize; i++) {
+        contact1 = array[i];
+        output << contact1.getFirst() << " " << contact1.getLast() << " " << contact1.getPhone() << endl;
+    }
+
+    array[arraySize - 1] = contact1;
+
+    return array;
+
+} // closes addContact method
+
+string contactLookup(string lookup){
+    string first, last;
+    istringstream convert(lookup);
+    convert >> first;
+    convert >> last;
+
+    for (int i = arraySize - 1; i >= 0; i--){
+        if (array[i].getFirst() == first && array[i].getLast() == last){
+            return array[i].getPhone();
+        }
+    }
+
+    return "Sorry, the name you entered doesn't exist in this phone book! Please try again!";
+} // closes contactLookup method
+
 int main (){
     cout << "*** MY PHONE BOOK APPLICATION ***" << endl;
     cout << "Please choose an operation:" << endl;
-
-
 
     string countLine;
     ifstream file;
@@ -72,14 +111,16 @@ int main (){
 
     arrayOfContact();
 
-    bool quit = 0;
+    bool quit = false;
     char input;
 
     while (!quit){
         input = userInput();
         switch (input){
+            default: "Sorry, the name you entered doesn't exist in this phone book! Please try again!";
+
             case 'q':{
-                quit = 0;
+                quit = true;
             } // finish quit
                 break;
 
@@ -115,10 +156,10 @@ int main (){
                 break;
 
             case 'd':{
-                string input;
+                string dcontact;
                 cout << "Please enter contact name: ";
-                getline(cin, input);
-                array = deleteContact(input);
+                getline(cin, dcontact);
+                array = deleteContact(dcontact);
                 arraySize--;
 
             } // finished deleting contact
@@ -131,38 +172,3 @@ int main (){
     return 0;
 
 } // CLOSES MAIN
-
-
-
-contact* addContact(string first, string last, string phone){
-    delete array;
-    array = new contact[arraySize];
-    arrayOfContact();
-    contact contact1(first, last, phone);
-
-    ofstream output("phonebookmini.txt");
-    for (int i = 0; i < arraySize; i++) {
-        contact1 = array[i];
-        output << contact1.getFirst() << " " << contact1.getLast() << " " << contact1.getPhone() << endl;
-    }
-
-    array[arraySize - 1] = contact1;
-
-    return array;
-
-} // closes addContact method
-
-string contactLookup(string lookup){
-    string first, last;
-    istringstream convert(lookup);
-    convert >> first;
-    convert >> last;
-
-    for (int i = arraySize - 1; i >= 0; i--){
-        if (array[i].getFirst() == first && array[i].getLast() == last){
-            return array[i].getPhone();
-        }
-    }
-
-    return "Sorry, the name you entered doesn't exist in this phone book! Please try again!";
-} // closes contactLookup method

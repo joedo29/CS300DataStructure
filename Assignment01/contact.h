@@ -1,9 +1,9 @@
-///*
-// * contact.h
-// *
-// *  Created on: Oct 4, 2017
-// *      Author: joedo
-// */
+/*
+* contact.h
+*
+*  Created on: Oct 4, 2017
+*      Author: joedo
+*/
 
 #include <iostream>
 #include <fstream>
