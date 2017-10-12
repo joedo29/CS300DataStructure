@@ -20,32 +20,39 @@ public:
     string phone;
 
     // Default Constructor
-    contact();
+    contact(){}
 
     // Overload constructor
-    contact(string, string, string);
+    contact(string first, string last, string phone){
+    	   this-> first = first;
+    	   this -> last = last;
+    	   this -> phone = phone;
+    }
 
-    const string &getFirst() const;
+	const string& getFirst() const {
+		return first;
+	}
 
-    void setFirst(const string &first);
+	void setFirst(const string& first) {
+		this->first = first;
+	}
 
-    const string &getLast() const;
+	const string& getLast() const {
+		return last;
+	}
 
-    void setLast(const string &last);
+	void setLast(const string& last) {
+		this->last = last;
+	}
 
-    const string &getPhone() const;
+	const string& getPhone() const {
+		return phone;
+	}
 
-    void setPhone(const string &phone);
-
-    void arrayOfContact();
-
-    void print(contact contact1);
-
-    void contactLookup(string lookup);
-
+	void setPhone(const string& phone) {
+		this->phone = phone;
+	}
 }; // closes contact class
-
-
 
 
 #endif /* CONTACT_H_ */

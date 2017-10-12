@@ -1,174 +1,162 @@
 /*
-* Assignment01.cpp
-*
-*  Created on: Oct 4, 2017
-*      Author: Joe Do
+ * Assignment01.cpp
+ *
+ *  Created on: Oct 4, 2017
+ *      Author: Joe Do
  *      Purpose of this assignment is to create a phonebook program that allows
  *      users to search, delete, add, and view a list of all contacts.
-*/
+ */
+
 
 #include <sstream>
 #include "contact.h"
-#include "extra.h"
+
 
 using namespace std;
-contact* array;
+
+contact* phonebook;
 int arraySize = 0;
 
-char userInput() {
-    char userInput;
-    cout << "A(Add) | S(Search) | D(Delete) | L(List) | Q(Quit): ";
-    cin >> userInput;
-    return userInput;
-}
-void print(contact contact1) {
-    cout << contact1.getFirst() << " " << contact1.getLast() << " "<< contact1.getPhone() << endl;
-}
+void deleteContact(){
+	cout << "Enter Name: ";
+	string first, last;
+	cin >> first >> last;
 
-void arrayOfContact() {
-    int n = 0;
-    ifstream file;
-    file.open("phonebookmini.txt");
-    string first;
-    string last;
-    string phone;
-    while (!file.eof()) {
-        file >> first;
-        file >> last;
-        file >> phone;
+	for (int i = 0; i < arraySize; i++){
+		if(phonebook[i].first == first && phonebook[i].last == last){
+			phonebook[i] = NULL;
+			cout << "This contact has been deleted!";
+		} else{
+			cout << "This contact doesn't exist!";
+		}
+	}
+} // deleteContact
 
-        array[n].first = first;
-        array[n].last = last;
-        array[n].phone = phone;
+void addContact(){
+	cout << "Enter Name: ";
+	string first, last, phone;
+	cin >> first >> last;
+	cout << "Enter Phone: ";
+	cin >> phone;
 
-        n++; // increment array index by one
-    } // closes while loop
-} // closes arrayOfContact method
-
-
-void contactList(){
-    ifstream file;
-    file.open("phonebookmini.txt");
-
-    string first;
-    string last;
-    string phone;
-
-    while (!file.eof()){
-        file >> first;
-        file >> last;
-        file >> phone;
-        contact a (first, last, phone);
-        print (a);
-    }
-} // closes contactList method
-
-contact* addContact(string first, string last, string phone){
-    delete array;
-    array = new contact[arraySize];
-    arrayOfContact();
-    contact contact1(std::move(first), std::move(last), std::move(phone));
-
-    ofstream output("phonebookmini.txt");
-    for (int i = 0; i < arraySize; i++) {
-        contact1 = array[i];
-        output << contact1.getFirst() << " " << contact1.getLast() << " " << contact1.getPhone() << endl;
-    }
-
-    array[arraySize - 1] = contact1;
-
-    return array;
-
+	for (int i = 0; i < arraySize; i++){
+		if(phonebook[i].first == first && phonebook[i].last == last){
+			cout << "Contact already exist!";
+		} else{
+			phonebook[arraySize].first = first;
+			phonebook[arraySize].last = last;
+			phonebook[arraySize].phone = last;
+			arraySize *= 2;
+			cout << "This contact has been added!";
+		}
+	}
 } // closes addContact method
 
-string contactLookup(string lookup){
-    string first, last;
-    istringstream convert(lookup);
-    convert >> first;
-    convert >> last;
+string searchContact(){
+	cout << "Enter Name: ";
+	string first, last;
+	cin >> first >> last;
 
-    for (int i = arraySize - 1; i >= 0; i--){
-        if (array[i].getFirst() == first && array[i].getLast() == last){
-            return array[i].getPhone();
-        }
-    }
+	for (int i = 0; i < arraySize; i++){
+		if(phonebook[i].first == first && phonebook[i].last == last){
+			return phonebook[i].phone;
+		}
+	}
+	return "Contact not found!";
+} // closes searchContact method
 
-    return "Sorry, the name you entered doesn't exist in this phone book! Please try again!";
-} // closes contactLookup method
+void loadContact() {
+	int n = 0;
+	ifstream file;
+	file.open("phonebook.txt");
+	string first;
+	string last;
+	string phone;
+	while (!file.eof()) {
+		file >> first;
+		file >> last;
+		file >> phone;
+
+		phonebook[n].first = first;
+		phonebook[n].last = last;
+		phonebook[n].phone = phone;
+
+		n++; // increment array index by one
+	} // closes while loop
+} // closes loadContact method
+
+void contactList() {
+	int n = 0;
+	ifstream file;
+	file.open("phonebook.txt");
+	string first;
+	string last;
+	string phone;
+	while (!file.eof()) {
+		file >> first;
+		file >> last;
+		file >> phone;
+
+		phonebook[n].first = first;
+		phonebook[n].last = last;
+		phonebook[n].phone = phone;
+
+		cout<< phonebook[n].first << " " << phonebook[n].last << " " << phonebook[n].phone<<endl;
+
+		n++; // increment array index by one
+	} // closes while loop
+} // closes contactList method
+
 
 int main (){
-    cout << "*** MY PHONE BOOK APPLICATION ***" << endl;
-    cout << "Please choose an operation:" << endl;
+	string countLine = "";
+	ifstream file;
 
-    string countLine;
-    ifstream file;
-    file.open("phonebookmini.txt");
-    while(getline(file, countLine)){
-        arraySize ++;
-    }
+	file.open("phonebook.txt");
+	while(getline(file, countLine)){
+		arraySize++;
+	}
+	cout << arraySize;
 
-    array = new contact[arraySize];
+	phonebook = new contact[arraySize];
 
-    arrayOfContact();
+	loadContact();
 
-    bool quit = false;
-    char input;
+	cout << "*** MY PHONE BOOK APPLICATION ***" << endl;
+	cout << "Please choose an operation:" << endl;
 
-    while (!quit){
-        input = userInput();
-        switch (input){
-            default: "Sorry, the name you entered doesn't exist in this phone book! Please try again!";
+	string input;
+	bool check = 1;
 
-            case 'q':{
-                quit = true;
-            } // finish quit
-                break;
+	while(check){
+		cout << "A(Add) | S(Search) | D(Delete) | L(List) | Q(Quit): ";
+		cin >> input;
 
-            case 'l':{
-                contactList();
-            } // finished list
-                break;
+		if(input == "L" || input == "l"){
+			contactList();
+		}
 
-            case 'a':{
-                arraySize++;
-                string first, last, phone;
-                cout << "Enter first name: ";
-                cin >> first;
-                cout << "Enter last name: ";
-                cin >> last;
-                cout << "Enter phone: ";
-                cin >> phone;
-                array[arraySize - 1].first;
-                array[arraySize - 1].last;
-                array[arraySize - 1].phone;
-                addContact(first, last, phone);
-                cout << endl;
-            } // finished adding
-                break;
+		if(input == "Q" || input == "q"){
+			cout << "THANK YOU!";
+			check = 0;
+		}
 
-            case 's':{
-                string lookup;
-                cout << "Enter First Name: ";
-                getline(cin, lookup);
-                string result = contactLookup(lookup);
-                cout << result << endl;
-            } // finished searching
-                break;
+		if(input == "s" || input == "S"){
+			cout << searchContact();
+			cout << endl;
+		}
 
-            case 'd':{
-                string dcontact;
-                cout << "Please enter contact name: ";
-                getline(cin, dcontact);
-                array = deleteContact(dcontact);
-                arraySize--;
+		if (input == "a" || input == "A"){
+			addContact();
+		}
 
-            } // finished deleting contact
-                break;
+		if(input == "d" || input == "D"){
+			deleteContact();
+		}
 
-        } // closes switch
+	}
 
-    } // closes while loop
 
-    return 0;
+	return 0;
 
 } // CLOSES MAIN

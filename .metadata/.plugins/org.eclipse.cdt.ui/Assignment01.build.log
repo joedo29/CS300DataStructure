@@ -1,134 +1,31 @@
-23:35:34 **** Incremental Build of configuration Debug for project Assignment01 ****
+20:33:55 **** Build of configuration Debug for project Assignment01 ****
 make all 
+Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+ 
+Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c"
+Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
+ 
+Building file: ../cmake-build-debug/CMakeFiles/feature_tests.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/feature_tests.d" -MT"cmake-build-debug/CMakeFiles/feature_tests.o" -o "cmake-build-debug/CMakeFiles/feature_tests.o" "../cmake-build-debug/CMakeFiles/feature_tests.c"
+Finished building: ../cmake-build-debug/CMakeFiles/feature_tests.c
+ 
 Building file: ../Assignment01.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
-../Assignment01.cpp:30:9: error: reference to 'array' is ambiguous
-        array[n].first = first;
-        ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:31:9: error: reference to 'array' is ambiguous
-        array[n].last = last;
-        ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:32:9: error: reference to 'array' is ambiguous
-        array[n].phone = phone;
-        ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:71:5: error: reference to 'array' is ambiguous
-    array = new contact[arraySize];
-    ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:100:17: error: reference to 'array' is ambiguous
-                array[arraySize - 1].first;
-                ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:101:17: error: reference to 'array' is ambiguous
-                array[arraySize - 1].last;
-                ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:102:17: error: reference to 'array' is ambiguous
-                array[arraySize - 1].phone;
-                ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:121:13: error: expected expression
-            } // finished deleting contact
-            ^
-../Assignment01.cpp:153:12: error: reference to 'array' is ambiguous
-    delete array;
-           ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:154:5: error: reference to 'array' is ambiguous
-    array = new contact[arraySize];
-    ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:160:20: error: reference to 'array' is ambiguous
-        contact1 = array[i];
-                   ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:164:5: error: reference to 'array' is ambiguous
-    array[arraySize - 1] = contact1;
-    ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:166:12: error: reference to 'array' is ambiguous
-    return array;
-           ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:177:13: error: reference to 'array' is ambiguous
-        if (array[i].getFirst() == first && array[i].getLast() == last){
-            ^
-../Assignment01.cpp:7:10: note: candidate found by name lookup is 'array'
-contact* array;
-         ^
-/Library/Developer/CommandLineTools/usr/include/c++/v1/__tuple:222:64: note: candidate found by name lookup is 'std::__1::array'
-template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
-                                                               ^
-../Assignment01.cpp:177:13: error: type name requires a specifier or qualifier
-        if (array[i].getFirst() == first && array[i].getLast() == last){
-            ^
-../Assignment01.cpp:177:13: error: variable declaration in condition must have an initializer
-16 errors generated.
+../Assignment01.cpp:27:17: error: no viable overloaded '='
+                        phonebook[i] = NULL;
+                        ~~~~~~~~~~~~ ^ ~~~~
+../contact.h:16:7: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'long' to 'const contact' for 1st argument
+class contact{
+      ^
+1 error generated.
 make: *** [Assignment01.o] Error 1
 
-23:35:35 Build Finished (took 1s.500ms)
+20:33:56 Build Finished (took 655ms)
 
