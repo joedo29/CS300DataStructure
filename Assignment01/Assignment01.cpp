@@ -7,66 +7,72 @@
  *      users to search, delete, add, and view a list of all contacts.
  */
 
-
-#include <sstream>
 #include "contact.h"
 
 
 using namespace std;
 
-contact* phonebook;
-int arraySize = 0;
+contact *phonebook;
+int arraySize = 302850;
+int n = 0;
 
 void deleteContact(){
-	cout << "Enter Name: ";
+	cout << "Enter First and Last Name: ";
 	string first, last;
 	cin >> first >> last;
 
 	for (int i = 0; i < arraySize; i++){
 		if(phonebook[i].first == first && phonebook[i].last == last){
-			phonebook[i] = NULL;
-			cout << "This contact has been deleted!";
-		} else{
-			cout << "This contact doesn't exist!";
+			phonebook[i].first = "";
+			phonebook[i].last = "";
+			phonebook[i].phone = "";
+			cout << "This contact has been deleted!" << endl;
+			break;
 		}
-	}
+
+	} // closes for loop
+
 } // deleteContact
 
 void addContact(){
-	cout << "Enter Name: ";
+	cout << "Enter First and Last Name: ";
 	string first, last, phone;
 	cin >> first >> last;
 	cout << "Enter Phone: ";
 	cin >> phone;
 
+	//	 CODE BELOW PREVENTS USERS FROM ADDING EXISTING CONTACT
 	for (int i = 0; i < arraySize; i++){
 		if(phonebook[i].first == first && phonebook[i].last == last){
 			cout << "Contact already exist!";
+			break;
 		} else{
-			phonebook[arraySize].first = first;
-			phonebook[arraySize].last = last;
-			phonebook[arraySize].phone = last;
-			arraySize *= 2;
-			cout << "This contact has been added!";
+			phonebook[n].first = first;
+			phonebook[n].last = last;
+			phonebook[n].phone = phone;
+			cout << "This contact has been added!" << endl;
+			n ++;
+			break;
 		}
 	}
+
 } // closes addContact method
 
 string searchContact(){
-	cout << "Enter Name: ";
+	cout << "Enter First and Last Name: ";
 	string first, last;
 	cin >> first >> last;
 
-	for (int i = 0; i < arraySize; i++){
+	for (int i = 0; i < n; i++){
 		if(phonebook[i].first == first && phonebook[i].last == last){
-			return phonebook[i].phone;
+			return "Phone Number: " + phonebook[i].phone;
 		}
 	}
 	return "Contact not found!";
 } // closes searchContact method
 
-void loadContact() {
-	int n = 0;
+void loadContact() { // load all contacts to array phonebook
+	//int n = 0;
 	ifstream file;
 	file.open("phonebook.txt");
 	string first;
@@ -86,37 +92,15 @@ void loadContact() {
 } // closes loadContact method
 
 void contactList() {
-	int n = 0;
-	ifstream file;
-	file.open("phonebook.txt");
-	string first;
-	string last;
-	string phone;
-	while (!file.eof()) {
-		file >> first;
-		file >> last;
-		file >> phone;
+	int x = 0;
+	for (int i = 0; i < n; i++){
+		cout<< phonebook[i] << endl;
+	}
 
-		phonebook[n].first = first;
-		phonebook[n].last = last;
-		phonebook[n].phone = phone;
-
-		cout<< phonebook[n].first << " " << phonebook[n].last << " " << phonebook[n].phone<<endl;
-
-		n++; // increment array index by one
-	} // closes while loop
 } // closes contactList method
 
 
 int main (){
-	string countLine = "";
-	ifstream file;
-
-	file.open("phonebook.txt");
-	while(getline(file, countLine)){
-		arraySize++;
-	}
-	cout << arraySize;
 
 	phonebook = new contact[arraySize];
 
@@ -155,7 +139,6 @@ int main (){
 		}
 
 	}
-
 
 	return 0;
 

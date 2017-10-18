@@ -8,6 +8,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <sstream>
 
 using namespace std;
 #ifndef CONTACT_H_
@@ -24,7 +25,7 @@ public:
 
     // Overload constructor
     contact(string first, string last, string phone){
-    	   this-> first = first;
+    	   this -> first = first;
     	   this -> last = last;
     	   this -> phone = phone;
     }
@@ -51,6 +52,11 @@ public:
 
 	void setPhone(const string& phone) {
 		this->phone = phone;
+	}
+
+	friend ostream & operator << (ostream & os, contact & c){
+		os << c.first << " " << c.last << " " << c.phone;
+		return os;
 	}
 }; // closes contact class
 

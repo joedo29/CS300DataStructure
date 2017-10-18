@@ -1,802 +1,571 @@
-13:40:41 **** Build of configuration Debug for project Assignment01 ****
-make all 
-Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp"
-Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
- 
-Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c"
-Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
- 
-Building file: ../cmake-build-debug/CMakeFiles/feature_tests.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/feature_tests.d" -MT"cmake-build-debug/CMakeFiles/feature_tests.o" -o "cmake-build-debug/CMakeFiles/feature_tests.o" "../cmake-build-debug/CMakeFiles/feature_tests.c"
-Finished building: ../cmake-build-debug/CMakeFiles/feature_tests.c
- 
-Building file: ../Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
-Finished building: ../Assignment01.cpp
- 
-Building file: ../contact.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"contact.d" -MT"contact.o" -o "contact.o" "../contact.cpp"
-Finished building: ../contact.cpp
- 
-Building target: Assignment01
-Invoking: MacOS X C++ Linker
-g++  -o "Assignment01"  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./Assignment01.o ./contact.o   
-duplicate symbol _info_language_dialect_default in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _info_compiler in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _main in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _info_platform in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _info_arch in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _main in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/feature_tests.o
-duplicate symbol _main in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./Assignment01.o
-duplicate symbol __Z5print7contact in:
-    ./Assignment01.o
-    ./contact.o
-ld: 8 duplicate symbols for architecture x86_64
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make: *** [Assignment01] Error 1
-13:42:23 **** Incremental Build of configuration Debug for project Assignment01 ****
-make all 
-Building file: ../Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
-Finished building: ../Assignment01.cpp
- 
-Building file: ../contact.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"contact.d" -MT"contact.o" -o "contact.o" "../contact.cpp"
-Finished building: ../contact.cpp
- 
-Building target: Assignment01
-Invoking: MacOS X C++ Linker
-g++  -o "Assignment01"  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./Assignment01.o ./contact.o   
-duplicate symbol _info_language_dialect_default in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _info_compiler in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _main in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _info_platform in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _info_arch in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _main in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/feature_tests.o
-duplicate symbol __Z5print7contact in:
-    ./Assignment01.o
-    ./contact.o
-duplicate symbol _main in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./Assignment01.o
-ld: 8 duplicate symbols for architecture x86_64
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make: *** [Assignment01] Error 1
-13:42:34 **** Clean-only build of configuration Debug for project Assignment01 ****
-make clean 
-rm -rf  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./Assignment01.o ./contact.o  ./cmake-build-debug/CMakeFiles/feature_tests.d  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.d  ./Assignment01.d ./contact.d  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.d  ./cmake-build-debug/CMakeFiles/feature_tests.d  Assignment01
- 
-13:42:34 **** Clean-only build of configuration Debug for project DoublyLinkedList ****
-make clean 
-rm -rf  ./main.o  ./main.d  DoublyLinkedList
- 
-13:42:34 **** Clean-only build of configuration Debug for project LinkedListADT ****
-make clean 
-rm -rf  ./main.o  ./main.d  LinkedListADT
- 
-13:42:38 **** Build of configuration Debug for project Assignment01 ****
-make all 
-Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp"
-Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
- 
-Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c"
-Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
- 
-Building file: ../cmake-build-debug/CMakeFiles/feature_tests.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/feature_tests.d" -MT"cmake-build-debug/CMakeFiles/feature_tests.o" -o "cmake-build-debug/CMakeFiles/feature_tests.o" "../cmake-build-debug/CMakeFiles/feature_tests.c"
-Finished building: ../cmake-build-debug/CMakeFiles/feature_tests.c
- 
-Building file: ../Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
-Finished building: ../Assignment01.cpp
- 
-Building file: ../contact.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"contact.d" -MT"contact.o" -o "contact.o" "../contact.cpp"
-Finished building: ../contact.cpp
- 
-Building target: Assignment01
-Invoking: MacOS X C++ Linker
-g++  -o "Assignment01"  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./Assignment01.o ./contact.o   
-duplicate symbol _info_language_dialect_default in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _info_compiler in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _main in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _info_platform in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _info_arch in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _main in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/feature_tests.o
-duplicate symbol __Z5print7contact in:
-    ./Assignment01.o
-    ./contact.o
-duplicate symbol _main in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./Assignment01.o
-ld: 8 duplicate symbols for architecture x86_64
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make: *** [Assignment01] Error 1
-13:42:59 **** Incremental Build of configuration Debug for project Assignment01 ****
-make all 
-Building file: ../Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
-Finished building: ../Assignment01.cpp
- 
-Building file: ../contact.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"contact.d" -MT"contact.o" -o "contact.o" "../contact.cpp"
-Finished building: ../contact.cpp
- 
-Building target: Assignment01
-Invoking: MacOS X C++ Linker
-g++  -o "Assignment01"  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./Assignment01.o ./contact.o   
-duplicate symbol _info_language_dialect_default in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _info_compiler in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _main in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _info_platform in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _info_arch in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
-duplicate symbol _main in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./cmake-build-debug/CMakeFiles/feature_tests.o
-duplicate symbol _main in:
-    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
-    ./Assignment01.o
-duplicate symbol __Z5print7contact in:
-    ./Assignment01.o
-    ./contact.o
-ld: 8 duplicate symbols for architecture x86_64
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make: *** [Assignment01] Error 1
-13:48:32 **** Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-../src/Assignment01.cpp:12:10: fatal error: 'extra.h' file not found
-#include "extra.h"
-         ^~~~~~~~~
-1 error generated.
-make: *** [src/Assignment01.o] Error 1
-13:48:45 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-../src/Assignment01.cpp:29:14: warning: unused variable 'phonebook' [-Wunused-variable]
-    contact* phonebook = new contact[arraySize];
-             ^
-1 warning generated.
-Finished building: ../src/Assignment01.cpp
- 
-Building file: ../src/test.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.cpp"
-Finished building: ../src/test.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o ./src/test.o   
-duplicate symbol _main in:
-    ./src/Assignment01.o
-    ./src/test.o
-ld: 1 duplicate symbol for architecture x86_64
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make: *** [test] Error 1
-13:50:24 **** Clean-only build of configuration Debug for project Assignment01 ****
-make clean 
-rm -rf  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./Assignment01.o ./contact.o  ./cmake-build-debug/CMakeFiles/feature_tests.d  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.d  ./Assignment01.d ./contact.d  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.d  ./cmake-build-debug/CMakeFiles/feature_tests.d  Assignment01
- 
-13:50:24 **** Clean-only build of configuration Debug for project DoublyLinkedList ****
-make clean 
-rm -rf  ./main.o  ./main.d  DoublyLinkedList
- 
-13:50:24 **** Clean-only build of configuration Debug for project LinkedListADT ****
-make clean 
-rm -rf  ./main.o  ./main.d  LinkedListADT
- 
-13:50:25 **** Clean-only build of configuration Debug for project test ****
-make clean 
-rm -rf  ./src/Assignment01.o ./src/test.o  ./src/Assignment01.d ./src/test.d  test
- 
-13:50:29 **** Build of configuration Debug for project test ****
+13:25:42 **** Build of configuration Debug for project assignment ****
 make all 
 Building file: ../src/Assignment01.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
 Finished building: ../src/Assignment01.cpp
  
-Building file: ../src/test.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.cpp"
-Finished building: ../src/test.cpp
- 
-Building target: test
+Building target: assignment
 Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o ./src/test.o   
-duplicate symbol _main in:
-    ./src/Assignment01.o
-    ./src/test.o
-ld: 1 duplicate symbol for architecture x86_64
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make: *** [test] Error 1
-13:51:09 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
  
-13:51:12 **** Incremental Build of configuration Debug for project test ****
+13:25:52 **** Incremental Build of configuration Debug for project assignment ****
 make all 
 make: Nothing to be done for `all'.
-13:51:33 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-13:51:41 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-../src/Assignment01.cpp:22:14: warning: unused variable 'phonebook' [-Wunused-variable]
-    contact* phonebook = new contact[arraySize];
-             ^
-1 warning generated.
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-13:51:56 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-13:53:31 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-13:53:54 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-13:54:11 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-17:26:03 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-17:28:30 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-17:35:47 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-../src/Assignment01.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
-}
-^
-1 warning generated.
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-17:36:07 **** Incremental Build of configuration Debug for project test ****
+13:26:07 **** Incremental Build of configuration Debug for project assignment ****
 make all 
 make: Nothing to be done for `all'.
-17:40:59 **** Incremental Build of configuration Debug for project test ****
+13:29:16 **** Incremental Build of configuration Debug for project assignment ****
 make all 
 Building file: ../src/Assignment01.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-../src/Assignment01.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
-}
-^
-1 warning generated.
 Finished building: ../src/Assignment01.cpp
  
-Building target: test
+Building target: assignment
 Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
  
-17:42:30 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-../src/Assignment01.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
-}
-^
-1 warning generated.
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-17:42:50 **** Incremental Build of configuration Debug for project test ****
+13:35:07 **** Incremental Build of configuration Debug for project assignment ****
 make all 
 make: Nothing to be done for `all'.
-18:23:13 **** Incremental Build of configuration Debug for project test ****
+13:37:23 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+make: Nothing to be done for `all'.
+13:40:19 **** Incremental Build of configuration Debug for project assignment ****
 make all 
 Building file: ../src/Assignment01.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
 Finished building: ../src/Assignment01.cpp
  
-Building target: test
+Building target: assignment
 Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
  
-18:23:54 **** Incremental Build of configuration Debug for project test ****
+13:46:26 **** Incremental Build of configuration Debug for project assignment ****
 make all 
 Building file: ../src/Assignment01.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-18:32:20 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-18:38:38 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-../src/Assignment01.cpp:23:27: error: no viable conversion from 'string' (aka 'basic_string<char, char_traits<char>, allocator<char> >') to 'bool'
-                if(phonebook[i].first = first && phonebook[i].last = last){
-                                        ^~~~~
-/Library/Developer/CommandLineTools/usr/include/c++/v1/string:818:5: note: candidate function
-    operator __self_view() const _NOEXCEPT { return __self_view(data(), size()); }
+../src/Assignment01.cpp:41:12: error: reference to 'count' is ambiguous
+        phonebook[count].first = first;
+                  ^
+../src/Assignment01.cpp:17:5: note: candidate found by name lookup is 'count'
+int count = 0;
     ^
-../src/Assignment01.cpp:23:33: error: invalid operands to binary expression ('string' (aka 'basic_string<char, char_traits<char>, allocator<char> >') and 'string')
-                if(phonebook[i].first = first && phonebook[i].last = last){
-                                        ~~~~~ ^  ~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference:305:1: note: candidate found by name lookup is 'std::__1::count'
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:1138:1: note: candidate found by name lookup is 'std::__1::count'
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
+../src/Assignment01.cpp:42:12: error: reference to 'count' is ambiguous
+        phonebook[count].last = last;
+                  ^
+../src/Assignment01.cpp:17:5: note: candidate found by name lookup is 'count'
+int count = 0;
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference:305:1: note: candidate found by name lookup is 'std::__1::count'
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:1138:1: note: candidate found by name lookup is 'std::__1::count'
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
+../src/Assignment01.cpp:43:12: error: reference to 'count' is ambiguous
+        phonebook[count].phone = phone;
+                  ^
+../src/Assignment01.cpp:17:5: note: candidate found by name lookup is 'count'
+int count = 0;
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference:305:1: note: candidate found by name lookup is 'std::__1::count'
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:1138:1: note: candidate found by name lookup is 'std::__1::count'
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
+../src/Assignment01.cpp:45:2: error: reference to 'count' is ambiguous
+        count ++;
+        ^
+../src/Assignment01.cpp:17:5: note: candidate found by name lookup is 'count'
+int count = 0;
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference:305:1: note: candidate found by name lookup is 'std::__1::count'
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:1138:1: note: candidate found by name lookup is 'std::__1::count'
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
+../src/Assignment01.cpp:62:22: error: reference to 'count' is ambiguous
+        for (int i = 0; i < count; i++){
+                            ^
+../src/Assignment01.cpp:17:5: note: candidate found by name lookup is 'count'
+int count = 0;
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference:305:1: note: candidate found by name lookup is 'std::__1::count'
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:1138:1: note: candidate found by name lookup is 'std::__1::count'
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
+../src/Assignment01.cpp:87:3: error: reference to 'count' is ambiguous
+                count ++;
+                ^
+../src/Assignment01.cpp:17:5: note: candidate found by name lookup is 'count'
+int count = 0;
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference:305:1: note: candidate found by name lookup is 'std::__1::count'
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:1138:1: note: candidate found by name lookup is 'std::__1::count'
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
+6 errors generated.
+make: *** [src/Assignment01.o] Error 1
+13:49:58 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+../src/Assignment01.cpp:45:2: error: reference to 'count' is ambiguous
+        count ++;
+        ^
+../src/Assignment01.cpp:17:5: note: candidate found by name lookup is 'count'
+int count = 0;
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference:305:1: note: candidate found by name lookup is 'std::__1::count'
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:1138:1: note: candidate found by name lookup is 'std::__1::count'
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
+../src/Assignment01.cpp:87:3: error: reference to 'count' is ambiguous
+                count ++;
+                ^
+../src/Assignment01.cpp:17:5: note: candidate found by name lookup is 'count'
+int count = 0;
+    ^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/__bit_reference:305:1: note: candidate found by name lookup is 'std::__1::count'
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+/Library/Developer/CommandLineTools/usr/include/c++/v1/algorithm:1138:1: note: candidate found by name lookup is 'std::__1::count'
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
 2 errors generated.
 make: *** [src/Assignment01.o] Error 1
-18:39:12 **** Incremental Build of configuration Debug for project test ****
+13:51:35 **** Incremental Build of configuration Debug for project assignment ****
 make all 
 Building file: ../src/Assignment01.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
 Finished building: ../src/Assignment01.cpp
  
-Building target: test
+Building target: assignment
 Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
  
-18:41:47 **** Incremental Build of configuration Debug for project test ****
+13:53:03 **** Incremental Build of configuration Debug for project assignment ****
 make all 
 Building file: ../src/Assignment01.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-../src/Assignment01.cpp:29:1: warning: control may reach end of non-void function [-Wreturn-type]
-} // closes searchContact method
-^
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+13:56:31 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+13:57:27 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+13:58:32 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+13:58:48 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:00:52 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:01:36 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+make: Nothing to be done for `all'.
+14:03:00 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:03:47 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:05:56 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:06:24 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:15:41 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+../src/Assignment01.cpp:26:23: warning: equality comparison result unused [-Wunused-comparison]
+                        phonebook[i].first == "";
+                        ~~~~~~~~~~~~~~~~~~~^~~~~
+../src/Assignment01.cpp:26:23: note: use '=' to turn this equality comparison into an assignment
+                        phonebook[i].first == "";
+                                           ^~
+                                           =
+../src/Assignment01.cpp:27:22: warning: equality comparison result unused [-Wunused-comparison]
+                        phonebook[i].last == "";
+                        ~~~~~~~~~~~~~~~~~~^~~~~
+../src/Assignment01.cpp:27:22: note: use '=' to turn this equality comparison into an assignment
+                        phonebook[i].last == "";
+                                          ^~
+                                          =
+../src/Assignment01.cpp:28:23: warning: equality comparison result unused [-Wunused-comparison]
+                        phonebook[i].phone == "";
+                        ~~~~~~~~~~~~~~~~~~~^~~~~
+../src/Assignment01.cpp:28:23: note: use '=' to turn this equality comparison into an assignment
+                        phonebook[i].phone == "";
+                                           ^~
+                                           =
+3 warnings generated.
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:17:22 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:17:44 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+make: Nothing to be done for `all'.
+14:21:53 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:23:14 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:23:23 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+make: Nothing to be done for `all'.
+14:26:30 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:28:32 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:30:20 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:34:01 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+make: Nothing to be done for `all'.
+14:34:48 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:35:33 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+make: Nothing to be done for `all'.
+14:38:26 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+make: Nothing to be done for `all'.
+14:39:29 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+make: Nothing to be done for `all'.
+14:42:13 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+make: Nothing to be done for `all'.
+14:42:35 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+make: Nothing to be done for `all'.
+14:44:07 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+make: Nothing to be done for `all'.
+14:48:06 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+14:49:04 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+../src/Assignment01.cpp:95:6: warning: unused variable 'x' [-Wunused-variable]
+        int x = 0;
+            ^
 1 warning generated.
 Finished building: ../src/Assignment01.cpp
  
-Building target: test
+Building target: assignment
 Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
  
-18:43:23 **** Incremental Build of configuration Debug for project test ****
+14:55:49 **** Incremental Build of configuration Debug for project assignment ****
 make all 
 Building file: ../src/Assignment01.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+../src/Assignment01.cpp:95:6: warning: unused variable 'x' [-Wunused-variable]
+        int x = 0;
+            ^
+1 warning generated.
 Finished building: ../src/Assignment01.cpp
  
-Building target: test
+Building target: assignment
 Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
  
-18:43:56 **** Incremental Build of configuration Debug for project test ****
+15:09:20 **** Incremental Build of configuration Debug for project assignment ****
 make all 
 make: Nothing to be done for `all'.
-18:45:07 **** Incremental Build of configuration Debug for project test ****
+15:16:19 **** Incremental Build of configuration Debug for project Assignment01 ****
 make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-18:50:06 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-18:51:28 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-18:56:14 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-18:58:07 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-19:05:39 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-19:06:20 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nothing to be done for `all'.
-19:13:55 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-../src/Assignment01.cpp:17:17: error: no viable overloaded '='
-                        phonebook[i] = NULL;
-                        ~~~~~~~~~~~~ ^ ~~~~
-../src/contact.h:16:7: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'long' to 'const contact' for 1st argument
-class contact{
-      ^
-1 error generated.
-make: *** [src/Assignment01.o] Error 1
-19:16:05 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-../src/Assignment01.cpp:18:17: error: no viable overloaded '='
-                        phonebook[i] = NULL;
-                        ~~~~~~~~~~~~ ^ ~~~~
-../src/contact.h:16:7: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'long' to 'const contact' for 1st argument
-class contact{
-      ^
-1 error generated.
-make: *** [src/Assignment01.o] Error 1
-19:16:19 **** Clean-only build of configuration Debug for project Assignment01 ****
-make clean 
-rm -rf  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./Assignment01.o ./contact.o  ./cmake-build-debug/CMakeFiles/feature_tests.d  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.d  ./Assignment01.d ./contact.d  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.d  ./cmake-build-debug/CMakeFiles/feature_tests.d  Assignment01
- 
-19:16:19 **** Clean-only build of configuration Debug for project DoublyLinkedList ****
-make clean 
-rm -rf  ./main.o  ./main.d  DoublyLinkedList
- 
-19:16:19 **** Clean-only build of configuration Debug for project LinkedListADT ****
-make clean 
-rm -rf  ./main.o  ./main.d  LinkedListADT
- 
-19:16:20 **** Clean-only build of configuration Debug for project test ****
-make clean 
-rm -rf  ./src/Assignment01.o  ./src/Assignment01.d  test
- 
-19:16:25 **** Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-../src/Assignment01.cpp:18:17: error: no viable overloaded '='
-                        phonebook[i] = NULL;
-                        ~~~~~~~~~~~~ ^ ~~~~
-../src/contact.h:16:7: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'long' to 'const contact' for 1st argument
-class contact{
-      ^
-1 error generated.
-make: *** [src/Assignment01.o] Error 1
-19:17:14 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-../src/Assignment01.cpp:144:4: error: use of undeclared identifier 'deleteContact'
-                        deleteContact();
-                        ^
-1 error generated.
-make: *** [src/Assignment01.o] Error 1
-19:17:25 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-19:22:39 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-19:24:03 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nothing to be done for `all'.
-19:25:53 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nothing to be done for `all'.
-19:29:44 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-19:31:23 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-19:35:07 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-19:38:25 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-19:38:38 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nothing to be done for `all'.
-19:43:08 **** Incremental Build of configuration Debug for project test ****
-make all 
-Building file: ../src/Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
-Finished building: ../src/Assignment01.cpp
- 
-Building target: test
-Invoking: MacOS X C++ Linker
-g++  -o "test"  ./src/Assignment01.o   
-Finished building target: test
- 
-20:33:55 **** Build of configuration Debug for project Assignment01 ****
-make all 
-Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp"
-Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
- 
-Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c"
-Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
- 
-Building file: ../cmake-build-debug/CMakeFiles/feature_tests.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/feature_tests.d" -MT"cmake-build-debug/CMakeFiles/feature_tests.o" -o "cmake-build-debug/CMakeFiles/feature_tests.o" "../cmake-build-debug/CMakeFiles/feature_tests.c"
-Finished building: ../cmake-build-debug/CMakeFiles/feature_tests.c
- 
 Building file: ../Assignment01.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
-../Assignment01.cpp:27:17: error: no viable overloaded '='
-                        phonebook[i] = NULL;
-                        ~~~~~~~~~~~~ ^ ~~~~
-../contact.h:16:7: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'long' to 'const contact' for 1st argument
-class contact{
-      ^
-1 error generated.
-make: *** [Assignment01.o] Error 1
+../Assignment01.cpp:95:6: warning: unused variable 'x' [-Wunused-variable]
+        int x = 0;
+            ^
+1 warning generated.
+Finished building: ../Assignment01.cpp
+ 
+Building target: Assignment01
+Invoking: MacOS X C++ Linker
+g++  -o "Assignment01"  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./Assignment01.o   
+duplicate symbol _info_language_dialect_default in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_compiler in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_platform in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_arch in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/feature_tests.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./Assignment01.o
+ld: 7 duplicate symbols for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Assignment01] Error 1
+15:20:03 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+Building file: ../src/Assignment01.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment01.d" -MT"src/Assignment01.o" -o "src/Assignment01.o" "../src/Assignment01.cpp"
+../src/Assignment01.cpp:95:6: warning: unused variable 'x' [-Wunused-variable]
+        int x = 0;
+            ^
+1 warning generated.
+Finished building: ../src/Assignment01.cpp
+ 
+Building target: assignment
+Invoking: MacOS X C++ Linker
+g++  -o "assignment"  ./src/Assignment01.o   
+Finished building target: assignment
+ 
+15:20:11 **** Incremental Build of configuration Debug for project assignment ****
+make all 
+make: Nothing to be done for `all'.
+15:31:46 **** Incremental Build of configuration Debug for project Assignment01 ****
+make all 
+Building target: Assignment01
+Invoking: MacOS X C++ Linker
+g++  -o "Assignment01"  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./Assignment01.o   
+duplicate symbol _info_language_dialect_default in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_compiler in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_platform in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_arch in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/feature_tests.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./Assignment01.o
+ld: 7 duplicate symbols for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Assignment01] Error 1

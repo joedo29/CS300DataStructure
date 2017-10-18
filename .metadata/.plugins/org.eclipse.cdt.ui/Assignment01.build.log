@@ -1,31 +1,32 @@
-20:33:55 **** Build of configuration Debug for project Assignment01 ****
+15:31:46 **** Incremental Build of configuration Debug for project Assignment01 ****
 make all 
-Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp"
-Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
- 
-Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c"
-Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
- 
-Building file: ../cmake-build-debug/CMakeFiles/feature_tests.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/feature_tests.d" -MT"cmake-build-debug/CMakeFiles/feature_tests.o" -o "cmake-build-debug/CMakeFiles/feature_tests.o" "../cmake-build-debug/CMakeFiles/feature_tests.c"
-Finished building: ../cmake-build-debug/CMakeFiles/feature_tests.c
- 
-Building file: ../Assignment01.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Assignment01.d" -MT"Assignment01.o" -o "Assignment01.o" "../Assignment01.cpp"
-../Assignment01.cpp:27:17: error: no viable overloaded '='
-                        phonebook[i] = NULL;
-                        ~~~~~~~~~~~~ ^ ~~~~
-../contact.h:16:7: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'long' to 'const contact' for 1st argument
-class contact{
-      ^
-1 error generated.
-make: *** [Assignment01.o] Error 1
+Building target: Assignment01
+Invoking: MacOS X C++ Linker
+g++  -o "Assignment01"  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./Assignment01.o   
+duplicate symbol _info_language_dialect_default in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_compiler in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_platform in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_arch in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/feature_tests.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./Assignment01.o
+ld: 7 duplicate symbols for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Assignment01] Error 1
 
-20:33:56 Build Finished (took 655ms)
+15:31:46 Build Finished (took 394ms)
 
