@@ -10,6 +10,12 @@ using namespace std;
 
 #ifndef ORDEREDLINKEDLIST_H_
 #define ORDEREDLINKEDLIST_H_
+class OrderedLinkedList : public LinkedList{
+	void insert();
+	void deleteItem();
+	void search();
+
+}
 
 
 
