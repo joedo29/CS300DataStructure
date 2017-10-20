@@ -9,14 +9,13 @@
 
 #include "contact.h"
 
-
 using namespace std;
 
 contact *phonebook;
 int arraySize = 302850;
 int n = 0;
 
-void deleteContact(){
+void deleteContact(){ // this method will delete a contact in phonebook.txt
 	cout << "Enter First and Last Name: ";
 	string first, last;
 	cin >> first >> last;

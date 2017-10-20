@@ -569,3 +569,290 @@ duplicate symbol _main in:
 ld: 7 duplicate symbols for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 make: *** [Assignment01] Error 1
+14:46:08 **** Incremental Build of configuration Debug for project StackADT ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:
+../Stack.h:53:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+../main.cpp:11:14: note: in instantiation of member function 'Stack<int>::pop' requested here
+        x = a_stack.pop();
+                    ^
+In file included from ../main.cpp:1:
+../Stack.h:60:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+../main.cpp:15:14: note: in instantiation of member function 'Stack<int>::stop' requested here
+        z = a_stack.stop();
+                    ^
+2 warnings generated.
+Finished building: ../main.cpp
+ 
+Building target: StackADT
+Invoking: MacOS X C++ Linker
+g++  -o "StackADT"  ./main.o   
+Finished building target: StackADT
+ 
+14:51:32 **** Incremental Build of configuration Debug for project QueueADT ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:
+../queue.h:89:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+../main.cpp:49:9: note: in instantiation of member function 'Queue<int>::dequeue' requested here
+        aQueue.dequeue();
+               ^
+1 warning generated.
+Finished building: ../main.cpp
+ 
+Building target: QueueADT
+Invoking: MacOS X C++ Linker
+g++  -o "QueueADT"  ./main.o   
+Finished building target: QueueADT
+ 
+15:10:28 **** Incremental Build of configuration Debug for project QueueADT ****
+make all 
+Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+ 
+Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c"
+Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
+ 
+Building file: ../cmake-build-debug/CMakeFiles/feature_tests.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/feature_tests.d" -MT"cmake-build-debug/CMakeFiles/feature_tests.o" -o "cmake-build-debug/CMakeFiles/feature_tests.o" "../cmake-build-debug/CMakeFiles/feature_tests.c"
+Finished building: ../cmake-build-debug/CMakeFiles/feature_tests.c
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:
+../queue.h:89:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+../main.cpp:48:9: note: in instantiation of member function 'Queue<int>::dequeue' requested here
+                x = q.dequeue();
+                      ^
+1 warning generated.
+Finished building: ../main.cpp
+ 
+Building target: QueueADT
+Invoking: MacOS X C++ Linker
+g++  -o "QueueADT"  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./main.o   
+duplicate symbol _info_language_dialect_default in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_compiler in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_platform in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_arch in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/feature_tests.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./main.o
+ld: 7 duplicate symbols for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [QueueADT] Error 1
+15:12:47 **** Incremental Build of configuration Debug for project QueueADT ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:
+../queue.h:89:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+../main.cpp:48:9: note: in instantiation of member function 'Queue<int>::dequeue' requested here
+                x = q.dequeue();
+                      ^
+1 warning generated.
+Finished building: ../main.cpp
+ 
+Building target: QueueADT
+Invoking: MacOS X C++ Linker
+g++  -o "QueueADT"  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./main.o   
+duplicate symbol _info_language_dialect_default in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_compiler in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_platform in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_arch in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/feature_tests.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./main.o
+ld: 7 duplicate symbols for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [QueueADT] Error 1
+19:51:16 **** Incremental Build of configuration Debug for project StackADT ****
+make all 
+Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+ 
+Building file: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.d" -MT"cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" -o "cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o" "../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c"
+Finished building: ../cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c
+ 
+Building file: ../cmake-build-debug/CMakeFiles/feature_tests.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"cmake-build-debug/CMakeFiles/feature_tests.d" -MT"cmake-build-debug/CMakeFiles/feature_tests.o" -o "cmake-build-debug/CMakeFiles/feature_tests.o" "../cmake-build-debug/CMakeFiles/feature_tests.c"
+Finished building: ../cmake-build-debug/CMakeFiles/feature_tests.c
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:18:29: error: non-ASCII characters are not allowed outside of literals and identifiers
+        int result = a_stack.pop() –
+                                   ^
+../main.cpp:18:28: error: expected ';' at end of declaration
+        int result = a_stack.pop() –
+                                  ^
+                                  ;
+2 errors generated.
+make: *** [main.o] Error 1
+19:53:18 **** Incremental Build of configuration Debug for project QueueADT ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:
+../queue.h:89:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+../main.cpp:49:9: note: in instantiation of member function 'Queue<int>::dequeue' requested here
+        aQueue.dequeue();
+               ^
+1 warning generated.
+Finished building: ../main.cpp
+ 
+Building target: QueueADT
+Invoking: MacOS X C++ Linker
+g++  -o "QueueADT"  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./main.o   
+duplicate symbol _info_language_dialect_default in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_compiler in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_platform in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_arch in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/feature_tests.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./main.o
+ld: 7 duplicate symbols for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [QueueADT] Error 1
+19:56:23 **** Incremental Build of configuration Debug for project QueueADT ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:1:
+../queue.h:89:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+../main.cpp:48:9: note: in instantiation of member function 'Queue<int>::dequeue' requested here
+                x = q.dequeue();
+                      ^
+1 warning generated.
+Finished building: ../main.cpp
+ 
+Building target: QueueADT
+Invoking: MacOS X C++ Linker
+g++  -o "QueueADT"  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o  ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o  ./cmake-build-debug/CMakeFiles/feature_tests.o  ./main.o   
+duplicate symbol _info_language_dialect_default in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_compiler in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_platform in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _info_arch in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./cmake-build-debug/CMakeFiles/feature_tests.o
+duplicate symbol _main in:
+    ./cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o
+    ./main.o
+ld: 7 duplicate symbols for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [QueueADT] Error 1
+22:13:02 **** Incremental Build of configuration Debug for project LinkedListADT ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+In file included from ../main.cpp:9:
+../LinkedList.h:15:33: warning: deleted function definitions are a C++11 extension [-Wc++11-extensions]
+                LinkedList(const LinkedList&)=delete; //copy constructor
+                                              ^
+In file included from ../main.cpp:10:
+../Point.h:47:2: warning: control reaches end of non-void function [-Wreturn-type]
+        }
+        ^
+In file included from ../main.cpp:9:
+../LinkedList.h:150:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+../main.cpp:24:6: note: in instantiation of function template specialization 'operator<<<int>' requested here
+        cout<<list<<endl;
+            ^
+3 warnings generated.
+Finished building: ../main.cpp
+ 
+Building target: LinkedListADT
+Invoking: MacOS X C++ Linker
+g++  -o "LinkedListADT"  ./main.o   
+Finished building target: LinkedListADT
+ 

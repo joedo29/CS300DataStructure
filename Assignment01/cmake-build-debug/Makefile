@@ -150,33 +150,6 @@ Assignment01.cpp.s:
 	$(MAKE) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/Assignment01.cpp.s
 .PHONY : Assignment01.cpp.s
 
-contact.o: contact.cpp.o
-
-.PHONY : contact.o
-
-# target to build an object file
-contact.cpp.o:
-	$(MAKE) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/contact.cpp.o
-.PHONY : contact.cpp.o
-
-contact.i: contact.cpp.i
-
-.PHONY : contact.i
-
-# target to preprocess a source file
-contact.cpp.i:
-	$(MAKE) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/contact.cpp.i
-.PHONY : contact.cpp.i
-
-contact.s: contact.cpp.s
-
-.PHONY : contact.s
-
-# target to generate assembly for a file
-contact.cpp.s:
-	$(MAKE) -f CMakeFiles/Assignment01.dir/build.make CMakeFiles/Assignment01.dir/contact.cpp.s
-.PHONY : contact.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +162,6 @@ help:
 	@echo "... Assignment01.o"
 	@echo "... Assignment01.i"
 	@echo "... Assignment01.s"
-	@echo "... contact.o"
-	@echo "... contact.i"
-	@echo "... contact.s"
 .PHONY : help
 
 

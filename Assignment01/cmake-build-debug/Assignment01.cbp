@@ -85,19 +85,7 @@
 		<Unit filename="/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/Assignment01.cpp">
 			<Option target="Assignment01"/>
 		</Unit>
-		<Unit filename="/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/contact.cpp">
-			<Option target="Assignment01"/>
-		</Unit>
 		<Unit filename="/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/contact.h">
-			<Option target="Assignment01"/>
-		</Unit>
-		<Unit filename="/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/extra.h">
-			<Option target="Assignment01"/>
-		</Unit>
-		<Unit filename="/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/phonebook.txt">
-			<Option target="Assignment01"/>
-		</Unit>
-		<Unit filename="/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/phonebookmini.txt">
 			<Option target="Assignment01"/>
 		</Unit>
 		<Unit filename="/Users/joedo/Documents/workspace/CS300.Database.Structure/Assignment01/CMakeLists.txt">
