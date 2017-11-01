@@ -1,4 +1,4 @@
-15:31:46 **** Incremental Build of configuration Debug for project Assignment01 ****
+07:36:57 **** Incremental Build of configuration Debug for project Assignment01 ****
 make all 
 Building target: Assignment01
 Invoking: MacOS X C++ Linker
@@ -28,5 +28,5 @@ ld: 7 duplicate symbols for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 make: *** [Assignment01] Error 1
 
-15:31:46 Build Finished (took 394ms)
+07:36:57 Build Finished (took 140ms)
 

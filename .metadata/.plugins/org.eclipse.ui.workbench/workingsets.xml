@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<workingSet editPageId="org.eclipse.cdt.ui.CElementWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1509421526278_1" label="Delta" name="Delta">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DeltaAirline" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1506872730968_0" label="Window Working Set" name="Aggregate for window 1506872730968"/>
+<mruList name="Delta"/>
 </workingSetManager>

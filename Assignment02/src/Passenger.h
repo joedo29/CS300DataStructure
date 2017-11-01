@@ -25,7 +25,13 @@ public:
 	// Default Constructor
 	Passenger(){}
 
-	// Overload constructor
+	// Overload constructor with two items
+	Passenger(string first, string last){
+		this -> first = first;
+		this -> last = last;
+	}
+
+	// Overload constructor with four items
 	Passenger(string first, string last, string phone, string address){
 		this -> first = first;
 		this -> last = last;
@@ -66,9 +72,23 @@ public:
 	}
 
 	friend ostream & operator << (ostream & os, Passenger & c){
-		os << c.first << endl << c.last << endl << c.address << endl << c.phone;
+		// FATMA SERCE [12345 SE 48th St Issaquah WA] [ +14251234567]
+		os << c.first << " " << c.last << " [" << c.address << "]" << " " << "[+1" << c.phone << "]";
 		return os;
 	}
+
+	friend bool operator< (const Passenger& a, const Passenger& b){
+		return a.last < b.last;
+	}
+
+	friend bool operator> (const Passenger& a, const Passenger& b){
+		return a.last > b.last;
+	}
+
+	friend bool operator== (const Passenger& a, const Passenger& b){
+		return a.first + a.last == b.first + b.last;
+	}
+
 }; // closes contact class
 
 
