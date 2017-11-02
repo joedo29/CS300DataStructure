@@ -3247,3 +3247,19 @@ rm -rf  ./src/Assignment02.o  ./src/Assignment02.d  Assignment02
 make clean 
 rm -rf  ./src/Assignment02.o  ./src/Assignment02.d  Assignment02
  
+11:02:35 **** Clean-only build of configuration Debug for project test2 ****
+make clean 
+rm -rf  ./src/Assignment02.o ./src/test2.o  ./src/Assignment02.d ./src/test2.d  test2
+ 
+07:39:38 **** Clean-only build of configuration Debug for project test2 ****
+make clean 
+rm -rf  ./src/Assignment02.o ./src/test2.o  ./src/Assignment02.d ./src/test2.d  test2
+ 
+07:40:10 **** Clean-only build of configuration Debug for project Assignment02 ****
+make clean 
+rm -rf  ./src/Assignment02.o  ./src/Assignment02.d  Assignment02
+ 
+08:35:21 **** Clean-only build of configuration Debug for project test2 ****
+make clean 
+rm -rf  ./src/Assignment02.o ./src/test2.o  ./src/Assignment02.d ./src/test2.d  test2
+ 
