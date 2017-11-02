@@ -95,18 +95,18 @@ int main() {
 			cout << "Enter last name: ";
 			cin >> last;
 
-			Passenger *p = new Passenger (first, last);
-			Passenger p1;
+			Passenger* p = new Passenger (first, last);
+			Passenger* p1 = new Passenger;
 
-			//			for(int i = 0; i < 4; i++){
-			p1 = DeltaAirline[0].search(*p);
-			//				if(p1 != NULL)
-			//					break;
-			//			}
-			//			if(p1 != "")
-			cout << p1 << endl;
-			//			else
-			//				cout << "Sorry, we are not able to locate this passenger!" << endl;
+			for(int i = 0; i < 4; i++){
+				p1 = DeltaAirline[i].search(*p);
+				if(p1 != NULL)
+					break;
+			}
+			if(p1 != NULL)
+				cout << *p1 << endl;
+			else
+				cout << "Sorry, we are not able to locate this passenger!" << endl;
 			break;
 
 		} // closes case 'S'
@@ -122,7 +122,6 @@ int main() {
 
 			Passenger *p = new Passenger (first, last);
 			Passenger *p1;
-			cout << "before: ";
 			// Delete passenger based on flight number
 			//			if(flight == 100){
 			DeltaAirline[0].deleteItem(*p);
