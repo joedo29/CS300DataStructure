@@ -4223,3 +4223,6 @@ java.io.FileNotFoundException: /Users/joedo/Documents/workspace/CS300.Database.S
 
 !ENTRY org.eclipse.cdt.launch 4 104 2017-11-02 08:35:25.125
 !MESSAGE Program file does not exist
+
+!ENTRY org.eclipse.cdt.launch 4 104 2017-11-04 07:26:57.953
+!MESSAGE Program file does not exist

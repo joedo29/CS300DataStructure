@@ -3263,3 +3263,11 @@ rm -rf  ./src/Assignment02.o  ./src/Assignment02.d  Assignment02
 make clean 
 rm -rf  ./src/Assignment02.o ./src/test2.o  ./src/Assignment02.d ./src/test2.d  test2
  
+07:24:28 **** Clean-only build of configuration Debug for project Assignment02 ****
+make clean 
+rm -rf  ./src/Assignment02.o  ./src/Assignment02.d  Assignment02
+ 
+07:26:10 **** Clean-only build of configuration Debug for project Assignment02 ****
+make clean 
+rm -rf  ./src/Assignment02.o  ./src/Assignment02.d  Assignment02
+ 
