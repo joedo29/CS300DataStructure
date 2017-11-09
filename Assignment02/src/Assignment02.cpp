@@ -10,7 +10,7 @@
 
 #include "LinkedList.h"
 #include "Passenger.h"
-#include "OrderedLinkedList.h"
+# include "OrderedLinkedList.h"
 
 
 OrderedLinkedList<Passenger> *DeltaAirline = new OrderedLinkedList<Passenger> [4];
@@ -60,7 +60,7 @@ int main() {
 		case 'L':
 		case 'l': {
 			// Add customer to enter flight number
-			cout << "Enter flight number (100 , 200, 300, 400): ";
+			cout << "Enter flight number (100 , 200, 300, 400) ";
 			cin >> flight;
 
 			// Print passenger information based on flight number or inform user that the flight has no passenger
@@ -88,62 +88,62 @@ int main() {
 			break;
 		} // closes case 'L'
 
-		// case 'S':
-		// case 's': {
-		// 	cout << "Enter first name: ";
-		// 	cin >> first;
-		// 	cout << "Enter last name: ";
-		// 	cin >> last;
+		case 'S':
+		case 's': {
+			cout << "Enter first name: ";
+			cin >> first;
+			cout << "Enter last name: ";
+			cin >> last;
+
+			Passenger* p = new Passenger (first, last);
+			Passenger* p1 = new Passenger;
+
+			for(int i = 0; i < 4; i++){
+				p1 = DeltaAirline[i].search(*p);
+				if(p1 != NULL)
+					break;
+			}
+			if(p1 != NULL)
+				cout << *p1 << endl;
+			else
+				cout << "Sorry, we are not able to locate this passenger!" << endl;
+			break;
+
+		} // closes case 'S'
 		//
-		// 	Passenger* p = new Passenger (first, last);
-		// 	Passenger p1;
+		//		case 'D':
+		//		case 'd': {
+		//			cout << "Enter flight number (100 , 200, 300, 400): ";
+		//			cin >> flight;
+		//			cout << "Enter first name: ";
+		//			cin >> first;
+		//			cout << "Enter last name: ";
+		//			cin >> last;
 		//
-		// 	for(int i = 0; i < 4; i++){
-		// 		p1 = DeltaAirline[i].search(*p);
-		// 		if(p1 != NULL)
-		// 			break;
-		// 	}
-		// 	if(p1 != NULL)
-		// 		cout << p1 << endl;
-		// 	else
-		// 		cout << "Sorry, we are not able to locate this passenger!" << endl;
-		// 	break;
+		//			Passenger *p = new Passenger (first, last);
+		//			Passenger *p1;
+		//			// Delete passenger based on flight number
+		//			//			if(flight == 100){
+		//			DeltaAirline[0].deleteItem(*p);
 		//
-		// } // closes case 'S'
-
-//		case 'D':
-//		case 'd': {
-//			cout << "Enter flight number (100 , 200, 300, 400): ";
-//			cin >> flight;
-//			cout << "Enter first name: ";
-//			cin >> first;
-//			cout << "Enter last name: ";
-//			cin >> last;
-
-//			Passenger *p = new Passenger (first, last);
-//			Passenger *p1;
-			// Delete passenger based on flight number
-			//			if(flight == 100){
-//			DeltaAirline[0].deleteItem(*p);
-
-			//				cout << "The passenger is deleted.";
-			//			}
-			//			else if(flight == 200){
-			//				DeltaAirline[1].deleteItem(*p);
-			//				cout << "The passenger is deleted.";
-			//			}
-			//			else if(flight == 300){
-			//				DeltaAirline[2].deleteItem(*p);
-			//				cout << "The passenger is deleted.";
-			//			}
-			//			else{
-			//				DeltaAirline[3].deleteItem(*p);
-			//				cout << "The passenger is deleted.";
-			//			}
-
-
-//			break;
-//		} // closes case 'D'
+		//			//				cout << "The passenger is deleted.";
+		//			//			}
+		//			//			else if(flight == 200){
+		//			//				DeltaAirline[1].deleteItem(*p);
+		//			//				cout << "The passenger is deleted.";
+		//			//			}
+		//			//			else if(flight == 300){
+		//			//				DeltaAirline[2].deleteItem(*p);
+		//			//				cout << "The passenger is deleted.";
+		//			//			}
+		//			//			else{
+		//			//				DeltaAirline[3].deleteItem(*p);
+		//			//				cout << "The passenger is deleted.";
+		//			//			}
+		//
+		//
+		//			break;
+		//		} // closes case 'D'
 
 		} // closes switch
 

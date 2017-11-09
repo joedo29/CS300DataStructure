@@ -3271,3 +3271,45 @@ rm -rf  ./src/Assignment02.o  ./src/Assignment02.d  Assignment02
 make clean 
 rm -rf  ./src/Assignment02.o  ./src/Assignment02.d  Assignment02
  
+13:20:12 **** Build of configuration Debug for project Assignment02 ****
+make all 
+Building file: ../src/Assignment02.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Assignment02.d" -MT"src/Assignment02.o" -o "src/Assignment02.o" "../src/Assignment02.cpp"
+In file included from ../src/Assignment02.cpp:11:
+../src/LinkedList.h:15:32: warning: deleted function definitions are a C++11 extension [-Wc++11-extensions]
+        LinkedList(const LinkedList&)=delete; //copy constructor
+                                      ^
+1 warning generated.
+Finished building: ../src/Assignment02.cpp
+ 
+Building target: Assignment02
+Invoking: MacOS X C++ Linker
+g++  -o "Assignment02"  ./src/Assignment02.o   
+Finished building target: Assignment02
+ 
+13:27:20 **** Clean-only build of configuration Debug for project test2 ****
+make clean 
+rm -rf  ./src/Assignment02.o ./src/test2.o  ./src/Assignment02.d ./src/test2.d  test2
+ 
+13:27:24 **** Build of configuration Debug for project test2 ****
+make all 
+Building file: ../src/test2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test2.d" -MT"src/test2.o" -o "src/test2.o" "../src/test2.cpp"
+In file included from ../src/test2.cpp:11:
+../src/LinkedList.h:15:32: warning: deleted function definitions are a C++11 extension [-Wc++11-extensions]
+        LinkedList(const LinkedList&)=delete; //copy constructor
+                                      ^
+1 warning generated.
+Finished building: ../src/test2.cpp
+ 
+Building target: test2
+Invoking: MacOS X C++ Linker
+g++  -o "test2"  ./src/test2.o   
+Finished building target: test2
+ 
+17:09:01 **** Clean-only build of configuration Debug for project Assignment02 ****
+make clean 
+rm -rf  ./src/Assignment02.o  ./src/Assignment02.d  Assignment02
+ 

@@ -23,7 +23,7 @@ class OrderedLinkedList : public LinkedList<T>{
 public:
 	void insert(T&);
 	void deleteItem(T&);
-	T& search(T&);
+	T* search(T&);
 	//	OrderedLinkedList<T>& operator=(OrderedLinkedList<T>&);
 	//		template <class U>
 	//		friend ostream& operator<<(ostream& os, OrderedLinkedList<U>& list);
@@ -82,21 +82,22 @@ void OrderedLinkedList<T>::deleteItem(T& item){
 
 // Begin search method
 template <class T>
-T& OrderedLinkedList<T>::search(T& item){ // this method return true/false
+T* OrderedLinkedList<T>::search(T& item){ // this method return true/false
 	node<T> *p = this->head;
+	T* p2;
 	bool found = 1;
 
-	while(p != NULL && !found){
+//	while(p != NULL && !found){
+	while(!found){
 		if(p->data == item){
 			found = 1;
 		}
 		else
 			p = p->next;
 	}
-
+	p2 = &p->data;
 	if(found)
-		return p->data;
-
+		return p2;
 
 } // closes search method
 
