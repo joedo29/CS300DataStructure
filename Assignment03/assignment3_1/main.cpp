@@ -17,9 +17,8 @@ int main() {
   s.push(a);
   s.push(b);
   s.push(c);
-  s.pop();
-  s.pop();
-  s.pop();
+  while(!s.isEmpty())
+    cout << s.pop();
 
   return 0;
 }
