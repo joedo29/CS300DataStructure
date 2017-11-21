@@ -36,7 +36,6 @@ class LinkedStack{
 
 };
 
-// Begin push implementation
 template <class T>
 void LinkedStack<T>::push(T& item){
   node<T> *p;
@@ -47,10 +46,8 @@ void LinkedStack<T>::push(T& item){
     p->next = top;
   top = p;
 }
-// finished push implementation
 
 
-// Begin pop implementation
 template <class T>
 T LinkedStack<T>::pop(){
   node<T> *p;
@@ -62,14 +59,11 @@ T LinkedStack<T>::pop(){
   delete p;
 
 }
-// finished pop implementation
 
 
-// Begin isEmpty implementation
 template <class T>
 bool LinkedStack<T>::isEmpty(){
   return top == 0;
 }
-// finished isEmpty implementation
 
 #endif /* LINKEDLIST_H_ */

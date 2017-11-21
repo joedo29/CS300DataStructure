@@ -11,14 +11,21 @@
 
 LinkedStack<int> s;
 int main() {
-  cout << "Enter 3 number: ";
-  int a, b, c;
-  cin >> a >> b >> c;
+  cout << "Enter 4 number: ";
+  int a, b, c, d;
+  cin >> a >> b >> c >> d;
   s.push(a);
   s.push(b);
   s.push(c);
-  while(!s.isEmpty())
-    cout << s.pop();
+  s.push(d);
+
+  cout <<"Stack size is: "<< s.size() << endl; // test stack size
+
+  cout << "Top item of the stack is: " << s.stop() << endl; // test printing the top item of a stack
+
+  cout << "Pop the top item: " << s.pop() << endl; // test popping item at the top of the Stack
+
+  cout << "The top item is now: " << s.stop() << endl;
 
   return 0;
 }

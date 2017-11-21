@@ -2,7 +2,7 @@
 // Name        : LinkedStack.h
 // Author      : Joe Do
 // Version     : 1.0
-// Date        : November 12, 2017
+// Date        : November 20, 2017
 // Copyright   : Your copyright notice
 // Description : implement a Stack using LinkedList data structure
 //============================================================================
@@ -10,6 +10,8 @@
 #define LINKEDLIST_H_
 
 #include <iostream>
+#include <assert.h>
+
 using namespace std;
 
 template <class T>
@@ -25,18 +27,34 @@ class LinkedStack{
      LinkedStack(){
        top = NULL;
      }
-     void push(T&); // insert item into Stack
-     T pop(); // delete item at the top of the Stack
-     // bool isFull();
+     void push(T&);
+     T pop();
+     int size() const;
      bool isEmpty();
-     // T stop();
-     // void destroy();
-     // void copy(LinkedStack<T>&);
-     // ~LinkedStack();
+     T stop();
+     void destroy();
+   protected:
+     int _size = 0;
 
 };
 
-// Begin push implementation
+
+
+// This method will check whether a stack isEmpty
+template <class T>
+bool LinkedStack<T>::isEmpty(){
+  return top == 0;
+}
+
+
+// This method will return the stack size
+template <class T>
+int LinkedStack<T> ::size() const{
+  return _size;
+}
+
+
+// This method allows users to add item into a stack
 template <class T>
 void LinkedStack<T>::push(T& item){
   node<T> *p;
@@ -46,30 +64,39 @@ void LinkedStack<T>::push(T& item){
   if(top != NULL)
     p->next = top;
   top = p;
+  _size++;
 }
-// finished push implementation
 
 
-// Begin pop implementation
+// this method will display an item at the top of a stack without deleting it
+template <class T>
+T LinkedStack<T>::stop(){
+   assert(!isEmpty() && "Whoops, it looks like the stack is empty");
+   if(!isEmpty()){
+     node<T> *p;
+     p = top;
+     return p->data;
+     delete p;
+   }
+}
+
+// This method will return and remove an item at top of a stack
 template <class T>
 T LinkedStack<T>::pop(){
+  assert(!isEmpty() && "Looks like the stap is empty" );
   node<T> *p;
-  // if(top == NULL)
-  //   return "";
   p = top;
   top = top->next;
   return p->data;
   delete p;
-
+  _size--;
 }
-// finished pop implementation
 
-
-// Begin isEmpty implementation
+// Destroy the stack
 template <class T>
-bool LinkedStack<T>::isEmpty(){
-  return top == 0;
+void LinkedStack<T>::destroy(){
+  top = 0;
 }
-// finished isEmpty implementation
+
 
 #endif /* LINKEDLIST_H_ */

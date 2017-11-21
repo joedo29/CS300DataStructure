@@ -37,7 +37,7 @@ int main(){
     }
 
   }
-  else{
+  else{ // if second number is larger, add to s1
     for(char &c: second){
       int i = c-'0';
       s1.push(i);
@@ -65,14 +65,14 @@ int main(){
         sum.push(m);
         remain = 0;
       }
-    } // closes if statement
+    }
 
     else{
       int x = ((a1 + a2) % 10 + remain);
       sum.push(x);
       remain = 1;
     }
-  } // closes while loop
+  }
 
   while(!s1.isEmpty()){ // add the remaining number from the larger Stack
     a1 = s1.pop();
@@ -85,7 +85,7 @@ int main(){
       sum.push(x);
       remain = 0;
     }
-  } // closes while loop
+  }
 
   if(remain==1)
     sum.push(remain);
@@ -98,4 +98,4 @@ int main(){
     cout << v;
   }
 
-} // closes main() method
+} 
