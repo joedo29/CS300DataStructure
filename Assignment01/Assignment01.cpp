@@ -8,12 +8,13 @@
  */
 
 #include "contact.h"
+#include <ctime>
 
 using namespace std;
 
-contact *phonebook;
-int arraySize = 302850;
-int n = 0;
+	contact *phonebook;
+	int arraySize = 302850;
+	int n = 0;
 
 void deleteContact(){ // this method will delete a contact in phonebook.txt
 	cout << "Enter First and Last Name: ";
@@ -98,12 +99,25 @@ void contactList() {
 
 } // closes contactList method
 
+double calculateElapseTime() {
+	clock_t begin = clock();
+//code_to_time
+	searchContact();
+	clock_t end = clock();
+	double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+	return elapsed_secs;
+}
+
 
 int main (){
 
 	phonebook = new contact[arraySize];
 
 	loadContact();
+	double joe = calculateElapseTime();
+	double doe = calculateElapseTime();
+	double result = doe - joe;
+	cout << "avg = " << result;
 
 	cout << "*** MY PHONE BOOK APPLICATION ***" << endl;
 	cout << "Please choose an operation:" << endl;
