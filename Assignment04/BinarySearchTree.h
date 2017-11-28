@@ -76,17 +76,19 @@ void BinarySearchTree<T>::inOrderT(node<T>* p){
 	}
 }
 
+// this method prints out contact from the contact list with filter applied
 template <class T>
 void BinarySearchTree<T>::filterTreeT(node<T>* p, T& item){
-	if(!(p->data == item)){ // p!=NULL && 
+	if(p!=NULL){
 		filterTreeT(p->left, item);
-		cout<<p->data << endl;
+    if(p->data < item || p->data == item){
+			cout<<p->data << endl;
+		}// || p->data == item)
 
 		filterTreeT(p->right, item);
-		// if(p->data == item)
-		// 	p=NULL;
 	}
 }
+
 
 //inorder traversal without recursion
 //template <class T>
@@ -106,7 +108,7 @@ void BinarySearchTree<T>::filterTreeT(node<T>* p, T& item){
 template <class T>
 void BinarySearchTree<T>::preOrderT(node<T>* p){
 	if(p!=NULL){
-		cout<<p->data;
+		cout<<p->data << endl;
 		preOrderT(p->left);
 		preOrderT(p->right);
 	}
@@ -117,9 +119,10 @@ void BinarySearchTree<T>::postOrderT(node<T>* p){
 	if(p!=NULL){
 		postOrderT(p->left);
 		postOrderT(p->right);
-		cout<<p->data;
+		cout<<p->data << endl;
 	}
 }
+
 template <class T>
 int BinarySearchTree<T>::max(int x, int y){
 	if (x>y)
