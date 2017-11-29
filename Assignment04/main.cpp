@@ -9,6 +9,7 @@
 
 #include "contact.h"
 #include "BinarySearchTree.h"
+#include "LinkedList.h"
 
 using namespace std;
 
@@ -46,8 +47,11 @@ void filterContact(){
 	string first, last;
 	cin >> first >> last;
 	contact *c = new contact(first, last);
+	LinkedList<contact> *list = new LinkedList<contact>();
 
-	tree.filterTree(*c);
+	tree.filterTree(*c, list);
+	cout << *list;
+	cout << list->length() << " contact(s)..." << endl;
 }
 
 void loadContact() { // load all contacts to a BinarySearchTree
@@ -98,6 +102,8 @@ int main (){
 
 		if(input == "P" || input == "p"){
 			tree.inOrder();
+			int count = tree.nodeCount();
+			cout << count << " contact(s)...." << endl;
 		}
 
 		if(input == "L" || input == "l"){

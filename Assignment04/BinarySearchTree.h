@@ -11,8 +11,10 @@
 #include <fstream>
 #include <string>
 #include <sstream>
-using namespace std;
+#include "LinkedList.h"
+#include "contact.h"
 
+using namespace std;
 template <class T>
 struct node{
 	T data;
@@ -37,7 +39,7 @@ private:
 	node<T>* findMax(node<T>*);
 	void deletenode(node<T>*&, T&);
 
-	void filterTreeT(node<T>*, T&);
+	void filterTreeT(node<T>*, T&, LinkedList<T>*);
 	T* foundValue(node<T>*, T&);
 
 public:
@@ -52,7 +54,7 @@ public:
 	bool search(T& item){return treeSearch(root,item);}
 
 	T* found(T& item){return foundValue(root, item); }
-	void filterTree(T& item){filterTreeT(root, item);}
+	void filterTree(T& item, LinkedList<T>*p){filterTreeT(root, item, p);}
 
 //	void insert(T&); //non-recursive function call
 	node<T>* findMax(){return findMax(root);}
@@ -70,22 +72,26 @@ template <class T>
 void BinarySearchTree<T>::inOrderT(node<T>* p){
 	if(p!=NULL){
 		inOrderT(p->left);
+		// list.insertLast(p->data);
 		cout<<p->data << endl;
 
 		inOrderT(p->right);
 	}
 }
 
+
+
 // this method prints out contact from the contact list with filter applied
 template <class T>
-void BinarySearchTree<T>::filterTreeT(node<T>* p, T& item){
+void BinarySearchTree<T>::filterTreeT(node<T>* p, T& item, LinkedList<T> *list){
 	if(p!=NULL){
-		filterTreeT(p->left, item);
+		filterTreeT(p->left, item, list);
     if(p->data < item || p->data == item){
-			cout<<p->data << endl;
+			// cout<<p->data << endl;
+			list->insertLast(p->data);
 		}// || p->data == item)
 
-		filterTreeT(p->right, item);
+		filterTreeT(p->right, item, list);
 	}
 }
 
